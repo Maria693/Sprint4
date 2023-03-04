@@ -6,7 +6,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+<<<<<<< HEAD
 import java.util.Objects;
+=======
+>>>>>>> origin/develop
 
 import static org.junit.Assert.assertTrue;
 
@@ -19,7 +22,12 @@ public class OrderPage {
 
     //Locators
 
+<<<<<<< HEAD
     By nameInput = By.xpath(".//input[@placeholder='* Имя']");
+=======
+    By nameInput = By.xpath("/html/body/div/div/div[2]/div[2]/div[1]/input");
+    By btnToOrder = By.xpath("/html/body/div/div/div/div[1]/div[2]/button[1]");
+>>>>>>> origin/develop
     By surnameInput = By.xpath(".//input[@placeholder='* Фамилия']");
     By addressInput = By.xpath(".//input[contains(@placeholder, 'Адрес')]");
     By subwayStationInput = By.xpath(".//input[contains(@placeholder, 'Станция метро')]");
@@ -86,7 +94,11 @@ public class OrderPage {
     }
 
     public void clickColor(String color) {
+<<<<<<< HEAD
         if (Objects.equals(color, "black")) {
+=======
+        if (color == "black") {
+>>>>>>> origin/develop
             driver.findElement(blackColorInput).click();
         } else {
             driver.findElement(greyColorInput).click();

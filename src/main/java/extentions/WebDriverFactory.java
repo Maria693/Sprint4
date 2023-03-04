@@ -1,6 +1,13 @@
 package extentions;
 import config.AppConfig;
+<<<<<<< HEAD
 import org.openqa.selenium.WebDriver;
+=======
+import pages.HomePage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+>>>>>>> origin/develop
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
