@@ -3,6 +3,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 public class HomePage {
     WebDriver driver;
@@ -15,7 +17,6 @@ public class HomePage {
     By accordionItem = By.xpath(".//div[@class='accordion__item']");
     By blockAboutImportant = By.xpath(".//div[contains(text(), 'Вопросы о важном')]");
     By acceptCookie = By.id("rcc-confirm-button");
-
     By orderButtons = By.xpath(".//button[text()='Заказать']");
 
     public void sclTillBlockAboutImp(){
@@ -45,7 +46,7 @@ public class HomePage {
                 .findElement(By.xpath(".//div[@class='accordion__panel']/p"))
                 .getText();
 
-        assertTrue(accordionItemText.equals(expectedText));
+        assertEquals(expectedText, accordionItemText);
     }
 
     // Step
